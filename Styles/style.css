@@ -1,0 +1,41 @@
+table {
+	width: 100%;
+}
+
+.prueba{
+	background: grey;
+	border: 1px grey;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.paddingEnTop{
+	padding-top:  0%;
+}
+
+.paddingEnBottom{
+	padding-bottom:  3%;
+
+}
+
+.paddingLeft{
+	padding-left: 30%;
+
+}
+
+#fondo1{
+	background-color: lightblue;
+}
+
+#tbMuestraProyectos{
+	margin-left: 50px;
+
+}
+
+#fondo2{
+	background-color: grey;
+
+}

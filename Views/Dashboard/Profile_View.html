@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+</head>
+<body>
+
+<h1 id="profileTitle"></h1>
+
+<br/>
+<button type="button" class="btn btn-success" id="crearProyecto" data-toggle="modal" data-target="#NewProjectModal">Create Project</button>
+<br/>
+
+	<h3 class = "paddingEnTop">Your Projects</h3>
+
+	<div class="card-deck" id = "tbMuestraProyectos">
+	<div class="card col-lg-4">
+	  <img class="card-img-top" src="Fotos/foto1.jpg" alt="Card image cap" width= "100%" height="100%">
+	  <div class="card-body">
+	    <h4 class="card-title">Titulo del proyecto</h4>
+	    <p class="card-text">SOY CODIGO!</p>
+	    <h6 class="card-title">Lo que necesitamos</h6>
+	    <p class="card-text">JAVA!!!</p>
+	    <a href="#" class="btn btn-primary">Aplicar</a>
+	  </div>
+	</div>
+
+
+	<div class="card col-lg-4">
+	  <img class="card-img-top" src="Fotos/foto1.jpg" alt="Card image cap" width= "100%" height="100%">
+	  <div class="card-body">
+	    <h4 class="card-title">Titulo del proyecto</h4>
+	    <p class="card-text">SOY CODIGO!</p>
+	    <h6 class="card-title">Lo que necesitamos</h6>
+	    <p class="card-text">JAVA!!!</p>
+	    <a href="#" class="btn btn-primary">Aplicar</a>
+	  </div>
+	</div>
+	<div class="card col-lg-4">
+	  <img class="card-img-top" src="Fotos/foto1.jpg" width= "100%" height="100%">
+	  <div class="card-body">
+	    <h4 class="card-title">Titulo del proyecto</h4>
+	    <p class="card-text">SOY CODIGO!</p>
+	    <h6 class="card-title">Lo que necesitamos</h6>
+	    <p class="card-text">JAVA!!!</p>
+	    <a href="#" class="btn btn-primary">Aplicar</a>
+	  </div>
+	</div>
+	</div>
+	</div>
+
+	<!-- New Project Modal -->
+  <div class="modal fade" id="NewProjectModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+        	<h4 class="modal-title">New Project</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        
+              <form>
+                <p> Create your own project! </p>
+                
+                <div class="form-group">
+                  <label for="ProjectNameTxt">Project Name</label>
+                  <input type="text" class="form-control" id="inputProjectName" placeholder="Project Name">
+                  <small  class="form-text text-muted">We'll never share your information with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="DescriptionTxt">Project Description</label>
+                  <input type="text" class="form-control" id="inputProjectDescription" placeholder="Project Description">
+                </div>
+                <div class="form-group">
+                  <label for="Imagetxt">Image Link (optional)</label>
+                  <input type="text" class="form-control" id="inputImageLink" placeholder="Enter a valid image link">
+                </div>
+
+                <button type="button" id="crearNuevoProyecto" class="btn btn-primary">Submit</button>
+              </form>
+              
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+<script type="text/javascript" src="Views/Dashboard/Profile.js"></script>
+</html>
